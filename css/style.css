@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: grid;
+    background-color: #D5BF86;
+}
+
+.home{
+    display: grid;
+    
+}
+
+/*Grids*/
+
+.textbox1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    width: 27.5%;
+    height: 300px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    width: 20%;
+}
+
+/*Textbox1*/
+
+.name{
+    color: #F1F0CC;
+    font-size: 60px;
+}
+
+.study{
+    color: #F1F0CC;
+    font-size: 30px;
+}
+
+.description{
+    color: #8D775F;
+    font-size: 25px;
+}
+
+/*Buttons*/
+
+.selection{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*Buttons Selection*/
+
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #F1F0CC;
+    font-size: 22.5px;
+    gap: 7.5px;
+}
+
+.rectangle{
+    width: 50px;
+    height: 2.5px;
+    background-color: #8D775F;
+    border-radius: 30px;
+}
+
+.button:active .rectangle {
+    width: 100px;
+    background-color: #F1F0CC;
+}
+
+@media screen {
+    
+}
