@@ -7,24 +7,32 @@
 }
 
 body{
-    display: grid;
+    display: flex;
+    justify-content: center;
     background-color: #D5BF86;
 }
 
-.home{
-    display: grid;
-    
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
 }
 
 /*Grids*/
 
-.textbox1{
+.box{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 100px;
-    width: 27.5%;
-    height: 300px;
+    width: 33%;
+    height: 700px;
 }
 
 .buttons{
@@ -35,7 +43,17 @@ body{
     width: 20%;
 }
 
-/*Textbox1*/
+.socials{
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 150px;
+    gap: 15px;
+    width: 200px
+}
+
+/*Box1*/
 
 .name{
     color: #F1F0CC;
@@ -50,14 +68,77 @@ body{
 .description{
     color: #8D775F;
     font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/*Box2*/
+
+.box.two{
+    width: 25%;
+}
+
+.pic-container{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    width: 300px;
+    height: 300px;
+    background-color: #F1F0CC;
+    filter: drop-shadow(16px 16px #00000014);
+}
+
+/*Box3*/
+
+.box.three{
+    width: 40%;
+    margin-left: 50px;
+}
+
+.box.three{
+    align-items: flex-start;
+}
+
+.texts{
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.text{
+    display: flex;
+}
+
+.question{
+    color: #8D775F;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.answer{
+    transition: 0.25s;
+    margin-left: 15px;
+    color: #F1F0CC;
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0%;
+}
+
+.text:hover .answer {
+    transition: 0.25s;
+    opacity: 100%;
 }
 
 /*Buttons*/
 
+.selections{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 .selection{
     display: flex;
-    align-items: center;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 /*Buttons Selection*/
@@ -67,24 +148,27 @@ body{
     flex-direction: row;
     align-items: center;
     background: none;
+    text-decoration: none;
     border: none;
-    color: #F1F0CC;
+    color: #8D775F;
     font-size: 22.5px;
     gap: 7.5px;
 }
 
+.button.one{
+    color: #F1F0CC;
+}
+
 .rectangle{
+    transition: 0.25s;
     width: 50px;
     height: 2.5px;
     background-color: #8D775F;
     border-radius: 30px;
 }
 
-.button:active .rectangle {
-    width: 100px;
+.button:hover .rectangle {
+    transition: 0.25s;
+    width: 75px;
     background-color: #F1F0CC;
-}
-
-@media screen {
-    
 }
